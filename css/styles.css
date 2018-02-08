@@ -1,0 +1,537 @@
+/* Brock William Bunting December 2017 */
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 200ms;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Column system */
+
+[class^=col-] {
+  width: 100%;
+  margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+  margin-top: 0;
+}
+
+.col-1 {
+  width: 33.33334%;
+  float: left;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 40rem) {
+
+  [class^=col-] {
+    float: left;
+    padding: 0 .5em;
+    margin-top: 0;
+  }
+
+  [class^=col-]:first-child {
+    padding-left: 0;
+  }
+
+  [class^=col-]:last-child {
+    padding-right: 0;
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+
+  .col-1 {
+    width: 16.6666%;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
+
+
+/* typography */
+
+h1 {
+  font-weight: 300;
+  font-size: 2.25rem;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 1em;
+  line-height: 1.25;
+  padding: .5em;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 10rem) {
+  .title {
+    font-size: 2.5rem;
+    margin: 1.5em;
+    font-weight: 900;
+    margin-top: .25em;
+  }
+}
+
+@media (min-width: 37rem){
+  .title {
+    font-size: 2.5rem;
+    margin: 1.5em;
+    font-weight: 900;
+    margin-top: 3.5em;
+    vertical-align: middle;
+  }
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: .9em;
+}
+
+.title-cta {
+  margin: 0 0 .5em;
+}
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: 60rem) {
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+.button {
+  display: inline-block; /* Makes padding add to the height of the page */
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+
+}
+
+@media (min-width: 60rem) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+.button-accent {
+  color: #232323;
+  border-color: #232323;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #00ffc6;
+  color: #232323;
+  transform: scale(1.1);
+}
+
+.button-small {
+  font-size: .7rem;
+  font-weight: 500;
+  color: #00ffc6;
+  border-color: #00ffc6;
+}
+
+.button-dark {
+  color: #232323;
+  border-color: #232323;
+  background: #00ffc6;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+  background: #232323;
+  color: #00ffc6;
+  transform: scale(1.1);
+}
+
+
+
+
+/* header */
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 1em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+
+}
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .9rem;
+  padding: .5em;
+  color: #00ffc6;
+
+}
+
+nav a:hover,
+nav a:focus {
+  color: #232323;
+}
+
+@media (min-width: 10rem) {
+  .logo {
+    width: 15%;
+
+
+}
+
+@media (min-width: 60rem) {
+  .logo {
+    /* Width of logo is 1800px */
+    width: 15%;
+    float: left;
+  }
+  nav {
+    float: right;
+  }
+}
+
+
+
+/* home-hero */
+
+.home-hero {
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 10em 0;
+  color: #232323;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: 60rem) {
+  .home-hero {
+    height: 95vh;
+    padding-top: 22vh;
+
+  }
+}
+
+@media (min-width: 25rem) {
+  .home-hero h1 {
+    font-size: 40px;
+
+  }
+}
+
+
+.home-about-textbox {
+  background-color: #232323;
+  padding: 3em;
+  width: 100vw;
+  margin-left: -2.7%;
+  outline: 2px solid #00ffc6;
+  outline-offset: -2.2em;
+  color: #FFF;
+  position: relative;
+}
+
+.home-about-textbox h1 {
+  color: #00ffc6;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .5em;
+  background: #232323;
+  padding: 0 .1em;
+}
+
+@media (min-width: 25rem) {
+  h1 {
+    font-size: 2rem;
+  }
+  .home-about-textbox h1 {
+    top: .5em;
+  }
+}
+
+@media (min-width: 60rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-about {
+    background-image: url(../img/who-we-are.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    padding-bottom: 10em;
+    padding-top: none;
+  }
+
+  .home-about-textbox {
+    height: 40em;
+    width: 40%;
+    min-width: 30em;
+    padding: 4em;
+    outline-offset: -2.5em;
+    margin-left: -3%;
+    top: -5em;
+    text-align: left;
+    box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
+  }
+
+  .home-about-textbox h1 {
+    top: .4em;
+    left: 9.37rem;
+    transform: translateX(0);
+  }
+}
+
+/* portfolio */
+
+.portfolio {
+  margin: 3em 0 0;
+  text-transform: uppercase;
+}
+
+.port-item {
+  margin: 0;
+  position: relative;
+}
+
+.port-item img {
+  display: block;
+}
+
+.port-desc {
+  position: absolute;
+  z-index: 100;
+
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  color: #00ffc6;
+  background: rgba(23, 23, 23, .6);
+  padding-bottom: 2em;
+}
+
+.port-desc p {
+  margin: 1em;
+}
+
+@media (min-width: 37rem) {
+  .port-item {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 60rem) {
+  .port-item {
+    width: 33.33333334%;
+    overflow: hidden;
+  }
+
+  .port-desc {
+    transform: translateY(150%);
+  }
+
+  .port-item:hover .port-desc {
+    transform: translateY(0%);
+  }
+}
+
+@media (min-width: 95rem) {
+  .port-item {
+    width: 25%;
+    overflow: hidden;
+  }
+
+  .port-desc {
+    transform: translateY(150%);
+  }
+
+  .port-item:hover .port-desc {
+    transform: translateY(0%);
+  }
+}
+
+
+/* CTA */
+
+.cta {
+  background-color: #00ffc6;
+  padding: 5em 0;
+}
+
+
+
+/* footer */
+
+footer {
+  background: #232323;
+  color: #fff;
+  text-align: center;
+  margin-top: -1em;
+}
+
+
+/* Contact Page */
+
+
+
+
+@media (min-width: 25rem) {
+
+
+  .contact-body, .contact-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #232323;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid #00ffc6; */
+    color: #00ffc6;
+  }
+
+
+
+  .contact-container h1 {
+    color: #00ffc6;
+    justify-content: center;
+  }
+  .contact-list li {
+    padding: 1em;
+    text-align: center;
+  }
+
+  .contact-header {
+    padding: 1em;
+
+
+  }
+
+  .backcontainer {
+    margin: 1em;
+  }
+
+  .back-btn {
+    color: #00ffc6;
+  }
+
+  .input {
+    background-color: #232323;
+    border: 2px solid #00ffc6;
+    color: white;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    background-color: #232323;
+    color: #00ffc6;
+    font-size: 1.15rem;
+    text-decoration: none;
+    border-style: none;
+  }
+}
+
+
+/* Project html  */
+
+
+  .project-item {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+
+  }
+  .project-item, img {
+    width: 100%;
+  }
+
+
+  section .project-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 9em;
+  }
+
+  html .project-logo {
+    position: absolute;
+    display: flex;
+
+  }
+
+  html .project-nav {
+    font-size: 1em;
+    margin: 1em;
+  }
+
+  .cta, .container {
+    /* margin-top: 0em; */
+  }
+}
