@@ -477,8 +477,7 @@ footer {
   overflow: hidden;
 }
 
-.project-item,
-img {
+.project-item img {
   width: 100%;
 }
 
