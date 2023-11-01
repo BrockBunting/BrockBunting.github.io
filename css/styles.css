@@ -223,13 +223,13 @@ nav a:focus {
 
 @media (min-width: 10rem) {
   .logo {
-    width: 15%;
+    width: 100px;
   }
 
   @media (min-width: 60rem) {
     .logo {
       /* Width of logo is 1800px */
-      width: 15%;
+      width: 100px;
       float: left;
     }
     nav {
@@ -500,8 +500,8 @@ nav a:focus {
     margin: 1em;
   }
 
-  .cta,
+  /* .cta,
   .container {
-    /* margin-top: 0em; */
-  }
+
+  } */
 }
