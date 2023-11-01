@@ -473,13 +473,13 @@ footer {
 /* Project html  */
 
 .project-item {
-  /* width: 100%; */
   float: left;
   overflow: hidden;
 }
 .projects-item {
   width: 100%;
   float: left;
+  max-height: unset;
   overflow: hidden;
 }
 
