@@ -372,10 +372,6 @@ nav a:focus {
       width: 33.33333334%;
       overflow: hidden;
     }
-    .project-item {
-      width: 33.33333334%;
-      overflow: hidden;
-    }
 
     .port-desc {
       transform: translateY(150%);
