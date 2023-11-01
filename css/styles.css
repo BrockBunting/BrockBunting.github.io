@@ -472,7 +472,7 @@ footer {
 /* Project html  */
 
 .project-item {
-  width: 100%;
+  /* width: 100%; */
   float: left;
   overflow: hidden;
 }
