@@ -315,7 +315,8 @@ nav a:focus {
     min-width: 30em;
     padding: 4em;
     outline-offset: -2.5em;
-    margin-left: -3%;
+    margin-right: -3%;
+    margin-left: auto;
     top: -5em;
     text-align: left;
     box-shadow: 0 0 4em 0 rgba(0, 0, 0, 0.3);
@@ -372,6 +373,7 @@ nav a:focus {
   .port-item {
     width: 33.33333334%;
     overflow: hidden;
+    max-height: 240px;
   }
 
   .port-desc {
