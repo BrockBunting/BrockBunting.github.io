@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: "Raleway", sans-serif;
   text-align: center;
+  background-color: #00ffc6;
 }
 
 img {
@@ -411,6 +412,7 @@ nav a:focus {
 footer {
   background: #232323;
   color: #fff;
+  padding-bottom: 2rem;
   text-align: center;
   margin-top: -1em;
 }
