@@ -120,6 +120,7 @@ p:last-of-type {
   font-weight: 300;
   display: block;
   font-size: 0.9em;
+  color: white;
 }
 
 .title-cta {
@@ -245,7 +246,7 @@ nav a:focus {
 /* home-hero */
 
 .home-hero {
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(../img/hero-2.jpeg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
