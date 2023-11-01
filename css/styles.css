@@ -308,7 +308,8 @@ nav a:focus {
     }
 
     .home-about-textbox {
-      height: 80em;
+      height: 58em;
+      margin-bottom: -18em;
       width: 40%;
       min-width: 30em;
       padding: 4em;
